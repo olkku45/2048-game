@@ -172,7 +172,6 @@ def move_tiles(tiles, direction):
             merge_value = tile.row
 
         if next_tile_key in tiles and tiles[next_tile_key].value == tile.value and merge_value not in merged:
-            print("merge")
             sorted_tiles.remove(tile)
             tiles[next_tile_key].value *= 2
             update_tiles(tiles, sorted_tiles)
